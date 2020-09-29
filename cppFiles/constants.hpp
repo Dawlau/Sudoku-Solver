@@ -11,4 +11,10 @@ const std::string Title = "Sudoku solver";
 
 
 // colors
-sf::Color white = sf::Color(255, 255, 255, 255);
+const sf::Color white = sf::Color(255, 255, 255, 255);
+const sf::Color black = sf::Color(0, 0, 0, 255);
+
+// grid related constants
+
+const int gridSize = 9;
+const int cellSize = 20; //px
