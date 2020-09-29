@@ -1,16 +1,16 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
-#include "constants.hpp"
+#include "cell.hpp"
+#include <vector>
 
-class game
-{
+
+class game{
+
 	private:
 
 		sf::RenderWindow window;
-		int grid[gridSize][gridSize];
-
-
+		std::vector< std::vector <cell> > grid;
 
 	public:
 
@@ -19,6 +19,8 @@ class game
 		void run();
 		void handleEvents();
 		void drawGrid();
+		void restartGame();
+		void drawControls();
 
 		~game();
 
