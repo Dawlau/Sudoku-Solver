@@ -2,7 +2,12 @@
 
 #include "SFML/Graphics.hpp"
 #include "cell.hpp"
+#include "Rectangle.hpp"
 #include <vector>
+#include "Grid.hpp"
+#include "NumberBar.hpp"
+#include "eventHandler.hpp"
+#include "textHandler.hpp"
 
 
 class game{
@@ -10,17 +15,17 @@ class game{
 	private:
 
 		sf::RenderWindow window;
-		std::vector< std::vector <cell> > grid;
+		NumberBar bar;
+		Grid grid;
+		int selectedNumber;
+		eventHandler evHandler;
+		textHandler txtHandler;
 
 	public:
 
 		game();
 
 		void run();
-		void handleEvents();
-		void drawGrid();
-		void restartGame();
-		void drawControls();
 
 		~game();
 

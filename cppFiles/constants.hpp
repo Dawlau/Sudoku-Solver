@@ -12,3 +12,5 @@ extern std::string Title;
 extern std::string quitText;
 extern std::string restartText;
 extern sf::Font font;
+extern int numbersCount;
+extern std::string showsolutionText;

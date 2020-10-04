@@ -2,19 +2,27 @@
 
 #include "SFML/Graphics.hpp"
 #include "constants.hpp"
+#include "Rectangle.hpp"
 
 
-class cell{
+class cell : public Rectangle{
 
 	private:
-		int row, col, number;
-		sf::RectangleShape rect;
+		int number;
+		sf::Text text;
+		bool generated;
+
+		void initRect(const int &row, const int &col);
+		void initText();
 
 	public:
 		cell(){}
-		cell(const int &, const int &, const int &);
+		cell(const int &row, const int &col, const int &number);
 		~cell();
-		void drawInto(sf::RenderWindow &);
 		int getNumber() const;
-		void setNumber(const int &);
+		void setNumber(const int &number);
+		void draw(sf::RenderWindow &window) const;
+		void setTextColor(const sf::Color &color);
+		void setGenerated(const bool &gen);
+		bool getGenerated() const;
 };
