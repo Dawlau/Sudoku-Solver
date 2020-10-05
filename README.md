@@ -30,4 +30,6 @@ If you just want to run the app, open the terminal in the root directory of the 
 
 If you ever want to use this code in Windows, you will have to go to the file "Solver.cpp" at line 64 and change the usleep function call to its Windows equivalent since usleep is Linux specific.
 
+If you find any bugs, feel free to submit them to blahoviciandrei1@gmail.com
+
 Have fun!
