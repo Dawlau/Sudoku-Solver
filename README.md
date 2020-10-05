@@ -1,6 +1,6 @@
 # Sudoku-Solver
 
-This is a classic Sudoku game, which allows the player to make moves, but also has the option to view a solution in case the player is stuck. Moreover, the player will never be solving the same puzzle twice since whenever the game is restarted, a new puzzle is generated.
+This is a classic Sudoku game, which allows the player to make moves, but also has the option to view a solution in case the player gets stuck. Moreover, the player will never be solving the same puzzle twice since whenever the game is restarted, a new puzzle is generated.
 
 This app has been made with [C++](https://en.wikipedia.org/wiki/C%2B%2B) and for the GUI and event handling I used [SFML](https://www.sfml-dev.org/). It has been compiled with [g++](https://gcc.gnu.org/) and the SFML dependencies have been linked dynamically.
 
