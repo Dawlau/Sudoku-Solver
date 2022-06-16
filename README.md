@@ -25,6 +25,10 @@ If you wish to re-compile the app just run the "app.sh" script which will take c
 
 If you just want to run the app, open the terminal in the root directory of the project and run the command "./app".
 
+## Demo video
+
+https://youtu.be/COEq_uyz4Ng
+
 
 ## Final notes
 
